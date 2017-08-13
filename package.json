@@ -12,6 +12,7 @@
   "keywords": [],
   "author": "CodeRi13 <me@coderi.space>",
   "license": "MIT",
+  "keyword": ["gitignore", "generator"],
   "devDependencies": {
     "eslint": "^4.4.1",
     "eslint-config-airbnb-base": "^11.3.1",
