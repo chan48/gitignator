@@ -1,14 +1,15 @@
 const commander = require('commander');
 const lib = require('../lib');
 
+const actionIgnore = (command, ignores) => {
+  lib(command, commander.global, ignores)
+    .catch(err => console.error(err));
+};
+
 commander
-  .version('1.0.0')
-  .option('-l, --list', 'Show gitignore types', false)
+  .arguments('[command] [ignores ...]')
+  .version('GitIgnator 1.0.0')
+  .usage('[command] [ignores...] [options]')
   .option('-g, --global', 'Switch global gitignore types', false)
+  .action(actionIgnore)
   .parse(process.argv);
-
-const showTypeList = commander.list;
-const switchGlobal = commander.global;
-
-lib(showTypeList, switchGlobal)
-  .catch(err => console.error(err));
