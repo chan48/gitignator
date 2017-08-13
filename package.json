@@ -1,5 +1,5 @@
 {
-  "name": "gitignore-gen",
+  "name": "gitignator",
   "version": "1.0.0",
   "description": "gitignore generator",
   "main": "index.js",
