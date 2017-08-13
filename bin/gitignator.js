@@ -7,7 +7,7 @@ const actionIgnore = (command, ignores) => {
 };
 
 commander
-  .arguments('[command] [ignores ...]')
+  .arguments('[command] [ignores...]')
   .version('GitIgnator 1.0.0')
   .usage('[command] [ignores...] [options]')
   .option('-g, --global', 'Switch global gitignore types', false)
