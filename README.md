@@ -7,6 +7,8 @@
     <br>
 </p>
 
+[![npm version](https://badge.fury.io/js/gitignator.svg)](https://badge.fury.io/js/gitignator)
+
 ## Install
 ```bash
 npm install -g gitignator
